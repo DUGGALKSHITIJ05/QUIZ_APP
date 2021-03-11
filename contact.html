@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail Us</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+   <link rel="icon" href="https://img.icons8.com/plasticine/100/fa314a/gmail.png"/>
+   <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    
+    <div class="contact" id="contact">
+        <a href="create.html"> <button type="button" class="back">Go Back</button></a>
+       
+       <div class="main" id="main">
+            <h1 class="welcome" id="welcome">Welcome To Our Mail Service.</h1>
+            <h3 class="second" id="second">You Can Freely Leave Your Honest View Here.</h3>
+       </div>
+       <div class="formcontent" id="formcontent">
+          <form action=/action_page.php" class="formitem">
+            <label id="firstname" class="label">Your First Name</label>
+            <input type="text" class="input" name="firstname" placeholder="First Name" onfocus="this.placeholder = '' " 
+            onblur="this.placeholder = 'First Name' " required>
+            <label id="lastname" class="label">Your Last Name</label>
+            <input type="text"  class="input" name="lastname" placeholder="Last Name" onfocus="this.placeholder = '' " 
+            onblur="this.placeholder = 'Last Name' " required>
+            <label id="email" class="label">Your Email</label>
+            <input type="text"  class="input" name="email" placeholder="Your Email" onfocus="this.placeholder = '' " 
+            onblur="this.placeholder = 'Your Email' " required>
+            <label id="number" class="label">Your Contact Number</label>
+            <input type="number" class="input" name="number" placeholder="Contact Number" onfocus="this.placeholder = '' " 
+            onblur="this.placeholder = 'Contact Number' " required>
+            <label id="message" class="label"> Please Write Your Message Here</label>
+            <input type="text" class="box" name="message" placeholder="Your Message" onfocus="this.placeholder = '' " 
+            onblur="this.placeholder = 'Your Message' " required>
+            <button type="submit" value="Submit" class="submit" id="submit">Submit</button>
+           </form>
+           </div>
+       </div>
+    
+</body>
+</html>

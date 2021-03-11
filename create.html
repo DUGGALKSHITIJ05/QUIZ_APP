@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+   <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/quiz.png"/>
+   <link rel="stylesheet" href="style.css">
+   <script src="index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="index.html" class="navcontent">Home</a>
+                <a href="#" class="navcontent">My Quiz</a>
+                <a href="#" class="navcontent">Documentation</a>
+            </div>
+        
+            <div class="nav-right">
+            <a href="#" class="navcontent">Settings</a>
+            <a href="contact.html" class="navcontent">Mail Us</a>
+            </div>
+       </div>
+
+       
+        <div class="question-card" id="card1">
+            <div class="Question">
+                <input type="text" name="question" placeholder="Question 1" class="inputQuestion" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Question 1'">
+            </div>
+            <div class="answers" id="answer-value">
+                <input type="text" name="answer-value" placeholder="a)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'a).'">
+                <input type="text" name="answer-value" placeholder="b)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'b).'">
+                <input type="text" name="answer-value" placeholder="c)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'c).'">
+                <input type="text" name="answer-value" placeholder="d)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'd).'">
+            </div>
+        </div>
+
+        <div class="question-card hide" id="card2">
+            <div class="Question">
+                <input type="text" name="question" placeholder="Question 2" class="inputQuestion" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Question 2'">
+            </div>
+            <div class="answers" id="answer-value">
+                <input type="text" name="answer-value" placeholder="a)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'a).'">
+                <input type="text" name="answer-value" placeholder="b)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'b).'">
+                <input type="text" name="answer-value" placeholder="c)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'c).'">
+                <input type="text" name="answer-value" placeholder="d)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'd).'">
+            </div>
+        </div>
+
+        <div class="question-card hide" id="card3">
+            <div class="Question">
+                <input type="text" name="question" placeholder="Question 3" class="inputQuestion" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Question 3'">
+            </div>
+            <div class="answers" id="answer-value">
+                <input type="text" name="answer-value" placeholder="a)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'a).'">
+                <input type="text" name="answer-value" placeholder="b)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'b).'">
+                <input type="text" name="answer-value" placeholder="c)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'c).'">
+                <input type="text" name="answer-value" placeholder="d)." class="answer" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'd).'">
+            </div>
+        </div>
+ 
+       
+        <div class="controls">
+            <a href="index.html"><button class="back-btn btn" id="back-btn">Back</button></a>
+            <a href="javascript:void(0)"><button class="next-btn btn " id="next-btn" onclick="nextQuestion()">Next</button></a>
+        </div>
+    </div>
+    
+</body>
+</html>

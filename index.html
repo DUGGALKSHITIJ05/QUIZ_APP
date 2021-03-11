@@ -5,12 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/quiz.png"/>
    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
     <div class="container">
-        <div id="question-container" class="hide">
+        <div class="heading">
+            <div class="head">
+                <h1 class="text">Create Your Own Quiz!</h1>
+            </div>
+            <div class="button">
+                <a href="create.html">
+                    <button class="btn" id="create-btn" onclick="noOfQuestion()">Create Quiz</button></a>
+            </div>
+        </div>
+        <div id="question-container" class="">
             <div id="question">Question</div>
             <div id="answers-btn" class="btn-grid">
                 <button class="btn">Answer 1</button>
@@ -21,10 +33,13 @@
         </div>
 
             <div class="controls">
-                <button class="start-btn btn" id="start-btn">Start</button>
-                <button class="next-btn btn hide" id="next-btn">Next</button>
+                <button class="start-btn btn" id="start-btn" onclick="startQuiz()">Start</button>
+                <button class="next-btn btn " id="next-btn">Next</button>
             </div>
         
     </div>
+
+ 
+
 </body>
 </html>
